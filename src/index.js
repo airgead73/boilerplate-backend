@@ -21,7 +21,7 @@ const apiRouter = express.Router();
  */
 
  app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://dpmsandbox.dev/");
+  res.setHeader("Access-Control-Allow-Origin", "https://dpmsandbox.dev");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
