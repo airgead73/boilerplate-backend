@@ -4,7 +4,7 @@
 
 const getPublicMessage = () => {
   return {
-    message: "The API doesn't require an access token to share this message [fix cors].",
+    message: "The API doesn't require an access token to share this message [fix header].",
   };
 };
 
