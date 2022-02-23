@@ -39,6 +39,10 @@ app.use("/api", apiRouter);
 
 apiRouter.use("/messages", messagesRouter);
 
+app.use(function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*')
+  })
+
 app.use(function (err, req, res, next) {
   console.log(err);
   res.status(500).send(err.message);
