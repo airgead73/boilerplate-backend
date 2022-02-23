@@ -32,7 +32,7 @@ const apiRouter = express.Router();
  }
 
 app.use(helmet());
-app.use(cors(corsOptions));
+app.use(cors(corsOptionsDelegate));
 app.use(express.json());
 
 app.use("/api", apiRouter);
