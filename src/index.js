@@ -20,14 +20,14 @@ const apiRouter = express.Router();
  *  App Configuration
  */
 
- app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://dpmsandbox.dev");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
+//  app.use((req, res, next) => {
+//   res.setHeader("Access-Control-Allow-Origin", "https://dpmsandbox.dev");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// });
 
 app.use(helmet());
 app.use(cors({ origin: clientOrigins }));

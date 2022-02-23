@@ -31,7 +31,7 @@ if (!clientOriginUrl) {
   );
 }
 
-const clientOrigins = ["https://dpm-sandbox-api.herokuapp.com"];
+const clientOrigins = ["https://dpmsandbox.dev"];
 
 module.exports = {
   audience,
